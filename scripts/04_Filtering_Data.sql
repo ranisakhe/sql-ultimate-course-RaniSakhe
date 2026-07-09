@@ -27,6 +27,11 @@ SELECT *
 FROM customers
 WHERE country = 'Germany'
 
+-- Retrieve all customers from USA.
+SELECT *
+FROM customers
+WHERE country = 'USA'
+
 -- Retrieve all customers who are not from Germany.
 SELECT *
 FROM customers
