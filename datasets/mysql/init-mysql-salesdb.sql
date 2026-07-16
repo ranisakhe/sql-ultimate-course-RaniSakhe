@@ -27,7 +27,7 @@ INSERT INTO `customers` (`customerid`,`firstname`,`lastname`,`country`,`score`) 
   (2, 'Kevin', 'Brown', 'USA', 900),
   (3, 'Mary', NULL, 'USA', 750),
   (4, 'Mark', 'Schwarz', 'Germany', 500),
-  (5, 'Anna', 'Adams', 'USA', NULL)
+  (5, 'Anna', 'Adams', 'USA', NULL),
   (6, 'Rani', 'Sakhe', 'India',NULL);
 
 -- ======================================================
