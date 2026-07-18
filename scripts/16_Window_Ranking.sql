@@ -22,6 +22,11 @@
 /* TASK 1:
    Rank Orders Based on Sales from Highest to Lowest
 */
+/*Remember this simple rule:
+
+ROW_NUMBER() → Every row gets a unique number.
+RANK() → Same rank for ties, but leaves gaps.
+DENSE_RANK() → Same rank for ties, with no gaps. */
 SELECT
     OrderID,
     ProductID,
@@ -30,6 +35,20 @@ SELECT
     RANK() OVER (ORDER BY Sales DESC) AS SalesRank_Rank,
     DENSE_RANK() OVER (ORDER BY Sales DESC) AS SalesRank_Dense
 FROM Sales.Orders;
+/*
+   Note:
+   1. ROW_NUMBER() - Gives every row a unique number.
+Even if two rows have the same sales, their row numbers are different.
+(Use when: You want each row to have a unique sequence number.)
+2. RANK()
+Gives the same rank to equal values.
+Skips the next rank(s) after a tie.
+(Use when: You want competition-style ranking (like sports tournaments))
+3. DENSE_RANK()
+Gives the same rank to equal values.
+Does not skip any ranks.
+( Use when: You want continuous ranking without gaps.)
+*/
 
 /* TASK 2:
    Use Case | Top-N Analysis: Find the Highest Sale for Each Product

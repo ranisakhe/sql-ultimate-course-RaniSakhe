@@ -21,6 +21,8 @@ VALUES
     (6, 'Anna', 'USA', NULL),
     (7, 'Sam', NULL, 100),
     (8, 'rani', 'usa', 10);
+    (9, 'sakhi', 'canada', 102),
+    (10,'smith', 'france', 180);
 
 -- Incorrect column order 
 INSERT INTO customers (id, first_name, country, score)
