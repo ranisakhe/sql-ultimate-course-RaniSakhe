@@ -25,7 +25,7 @@
 /*Remember this simple rule:
 
 ROW_NUMBER() → Every row gets a unique number.
-RANK() → Same rank for ties, but leaves gaps.
+RANK() → Same rank for ties(duplicates), but leaves gaps.
 DENSE_RANK() → Same rank for ties, with no gaps. */
 SELECT
     OrderID,
