@@ -58,7 +58,8 @@ FROM (
     FROM Sales.Products
 ) AS t
 WHERE Price > AvgPrice;
-
+/*the OVER() tells SQL:
+Calculate the average, but keep every row instead of collapsing them into one row.*/
 /* TASK 2:
    Rank Customers based on their total amount of sales.
 */
